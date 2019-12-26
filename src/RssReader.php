@@ -38,6 +38,7 @@ class RssReader {
      */
     public static function load($url) {
         static::$client = new Client();
+        static::$items = [];
         $response = static::$client->get($url);
         static::$xml = new SimpleXMLElement($response->getBody()->getContents());
         if(empty(static::$xml->channel->item)) {
