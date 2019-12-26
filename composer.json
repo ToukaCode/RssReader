@@ -1,0 +1,11 @@
+{
+    "name": "toukacode/rssreader",
+    "autoload": {
+        "psr-4": {
+            "ToukaCode\\": "src"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    }
+}
